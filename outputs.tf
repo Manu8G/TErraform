@@ -17,3 +17,11 @@ output "IPV4_server_2" {
   description = "IPV4 publica del servidor"
   value = "http://${aws_instance.Servidor_2.public_ip}:8080"
 }
+
+output "dns_publica_load_balancer" {
+  description = "DNS publica del load balancer"
+  value = "http://${aws_lb.alb.dns_name}"
+}
+
+
+
